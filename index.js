@@ -9,8 +9,8 @@ class Usuario {
     addMascota(mascota){this.mascotas.push(mascota);}
     countMascotas(){console.log(this.mascotas.length);}
     addBook(nombre,autor){this.libros.push({nombre:nombre,autor:autor});}
-    getBookNames(){console.log(this.libros.forEach((libro) =>{console.log(libro)}))}
-    }
+    getBookNames(){console.log(this.libros.map((libro) =>libro.nombre))}}
+    
 
 const obj = new Usuario ('enrique','frutos')
     obj.getFullName();
